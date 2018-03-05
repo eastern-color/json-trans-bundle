@@ -1,0 +1,18 @@
+{% block json_translation_widget %}
+    <div class="nav-tabs-custom" data-json-trans="{{ form.vars.id }}">
+        <ul class="nav nav-tabs" role="tablist">
+            {% for locale, localeForm in form.children %}
+                <li role="presentation" class="{{ locale == default_locale ? 'active' : ''}}">
+                    <a href="#{{ form.vars.id }}_{{ locale }}" aria-controls="{{ locale }}" role="tab" data-toggle="tab">{{ locale | upper }}{{ locale == default_locale ? ' (Default)' : '' }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+        <div class="tab-content">
+            {% for locale, localeForm in form.children %}
+                <div role="tabpanel" class="tab-pane {{ locale == default_locale ? 'active' : ''}}" id="{{ form.vars.id }}_{{ locale }}">
+                    {{ form_widget(localeForm) }}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

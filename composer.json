@@ -1,0 +1,27 @@
+{
+    "name": "eastern-color/json-trans-bundle",
+    "description": "",
+    "keywords": ["Translation","Form","Chinese","Conversion","ZhConv","Traditional","Simplified","China","Hong Kong","Taiwan","Singapore"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Peter",
+            "email": "peter.ho@360img.net",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "EasternColor\\JsonTransBundle\\": ""
+        }
+    },
+    "require": {
+        "php": ">=5.5.9",
+        "dreamsdrive/zh-conv": "^1.0"
+    },
+    "require-dev": {
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
