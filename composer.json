@@ -1,6 +1,6 @@
 {
     "name": "eastern-color/json-trans-bundle",
-    "description": "",
+    "description": "An anti-pattern tools to have Translations stored in single column.",
     "keywords": ["Translation","Form","Chinese","Conversion","ZhConv","Traditional","Simplified","China","Hong Kong","Taiwan","Singapore"],
     "license": "MIT",
     "authors": [

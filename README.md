@@ -16,6 +16,8 @@ TODO
 ----
 - Add configurable emtpy-fallback to translate between zh-hant and zh-hans
 - Add routing to translate between zh-hant and zh-hans
+- Add support to Symfony serializer group
+- Remove dependency to [JMSSerializerBundle](https://github.com/schmittjoh/JMSSerializerBundle)
 - Extends this README
 
 Command
