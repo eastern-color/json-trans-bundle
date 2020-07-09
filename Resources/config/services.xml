@@ -7,7 +7,7 @@
     <services>
         <defaults autowire="true" autoconfigure="true" public="false" />
 
-        <service class="EasternColor\JsonTransBundle\Services\ZhConverter\ZhConverter">
+        <service id="EasternColor\JsonTransBundle\Services\ZhConverter\ZhConverter" class="EasternColor\JsonTransBundle\Services\ZhConverter\ZhConverter">
         </service>
     </services>
 
